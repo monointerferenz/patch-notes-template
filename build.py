@@ -57,16 +57,16 @@ def build_all_versions():
         return
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    print("Starting compilation scan for SemVer modular patches...\n")
+    print("Starting compilation scan for SemVer modular patches... (ㆆ_ㆆ)\n")
 
     for root, _, files in os.walk(PATCH_DIR):
         for file in files:
             if file.endswith(".txt"):
-                patch_name = os.path.basename(root)
+                patch_name = os.path.basename(root).replace("-", "_").replace(" ", "_")
                 version = file.replace(".txt", "")
                 
                 txt_path = os.path.join(root, file)
-                svg_output_path = os.path.join(OUT_DIR, f"{patch_name}-{version}.svg")
+                svg_output_path = os.path.join(OUT_DIR, f"{patch_name}_{version}.svg")
                 
                 print(f"Processing: {patch_name} (v{version})")
                 success = compile_patch(txt_path, svg_output_path)
