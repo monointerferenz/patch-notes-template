@@ -1,0 +1,20 @@
+VOICE 1:
+- TeMetropolisst (Pitch) p> Braids (1v/oct)
+- Metropolis (Gate) g> Function (Trigger)
+- Braids (Out) -> Optomix (Ch1 Signal)
+- Function (+ Out) >> Optomix (Ch1 CV)
+- Function (- Out) >> Braids (Timbre CV)
+
+* Metropolis:
+| BPM = 124 
+| Swing = 0 
+| Root = F 
+| Scale = Minor 
+
+* Braids:
+| Mode = Fold 
+| Timbre = 30% 
+
+* Function:
+| Rise = 10 o'clock 
+| Fall = 12 o'clock

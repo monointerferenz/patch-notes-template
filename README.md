@@ -19,4 +19,7 @@
 - Thats all, folks
 
 ## Git hook
-When commiting a pre-commit hook is run, compiling all changes automagically.
+When commiting a pre-commit hook is run, compiling all changes automagically. 
+
+You can skip that with the `--no-verify` flag.
+But since you read the git documentation, this is nothing new to you.
