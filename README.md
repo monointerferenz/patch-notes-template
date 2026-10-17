@@ -5,9 +5,11 @@
 - [spektroaudio patchbook](https://github.com/spektroaudio/patchbook)
 - [graphviz](https://graphviz.org/)
 
-## Insatll
+## Install
 - install requirements
 - put spektroaudios patchbook.py file in patchbook_parser
+
+- the content of output directory is ignored by git. Change it if you want to track it. But it will be generated anyway.
 
 ## Usage
 ### Create a patch
@@ -16,10 +18,10 @@
 
 ### Build
 - run `python3 build.py`
-- Thats all, folks
+- That's all, folks
 
 ## Git hook
-When commiting a pre-commit hook is run, compiling all changes automagically. 
+When committing a pre-commit hook is run, compiling all changes automagically. 
 
 You can skip that with the `--no-verify` flag.
 But since you read the git documentation, this is nothing new to you.
